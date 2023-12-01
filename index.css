@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: #9296cf;
+    min-height:100vh;
+    max-height: 100vh;
+}
+
+.main_container{
+    padding: 50px;
+}
+
+.container1 {
+    background-color: antiquewhite;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.container2{
+    /* background-color: antiquewhite; */
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+button{
+    cursor: pointer;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bolder;
+    border-radius: 7px;
+    border: none;
+}
+#btn1{
+    background-color: #9296cf;
+    color: antiquewhite;
+    width: fit-content;
+}
+
+#btn1:hover{
+    background-color: antiquewhite;
+    color: #9296cf;
+    transition: 0.4s;
+    padding: 10px;
+    
+}
+
+#btn2{
+    width: fit-content;
+    background-color: antiquewhite;
+    color: #9296cf;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#btn2:hover{
+    background-color: #9296cf;
+    color: antiquewhite;
+    transition: 0.5s;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5vh;
+    font-size: 14px;
+    background-color: #525258;
+}
+
+ #name,  #number, #mail {
+    color: bisque;
+    padding: 5px;
+}
+
+

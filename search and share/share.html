@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="share.css">
+
+    <script src="https://api.countapi.xyz/hit/codefoxx.com/c63d9a7e-7c1d-429d-8b4a-fd1fc837184a?callback=websiteVisits"></script>
+</head>
+<body>
+    <div class="comment-container">
+        <div class="comment opened" id="first-comment">
+            <div class="comment-card">
+                <h3 class="comment-title">The first comment</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
+                  eaque itaque sit tempora officiis, quisquam atque? Impedit
+                  dignissimos error laudantium!
+                </p>
+                <div class="comment-card-footer">
+                  <div>
+                    <button class ="like-btn">
+                    <!-- <img src="like-outline.png" alt="" id="like">  -->
+                    <span id="like"><i class="fa-regular fa-thumbs-up"></i></span>
+                    <span id="count">0</span> likes
+                </button></div>
+                  <div>
+                    <button class="views">
+                        <img src="viewers.png" alt="">
+                        <span id="visits"></span>
+                    </button>
+                </div>
+            <div>
+                    <button id="shareBtn">
+                        <img src="Vector-share.png" alt="">
+                        
+                    </button>
+                </div>
+                  <div class="show-replies">Reply 2</div>
+                </div>
+
+            </div>
+
+            
+                <!-- reply -->
+            <div class="comment" dataset="first-comment" id="first-reply" >
+                <div class="comment-card">
+               <h3 class="comment-title">The first reply</h3>
+              <p>
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+               Voluptatum eaque itaque sit tempora officiis, quisquam atque?
+               Impedit dignissimos error laudantium!
+             </p>
+             <div class="comment-card-footer">
+               <div>Likes 123</div>
+               <div>Dislikes 23</div>
+               <div class="show-replies">Reply 1</div>
+             </div>
+           </div>
+
+           <div
+            class="comment"
+            dataset="first-reply"
+            id="first-first-reply"
+          >
+            <div class="comment-card">
+              <h3 class="comment-title">The first reply to the first reply</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptatum eaque itaque sit tempora officiis, quisquam atque?
+                Impedit dignissimos error laudantium!
+              </p>
+              <div class="comment-card-footer">
+                <div>Likes 123</div>
+                <div>Dislikes 23</div>
+                <div class="show-replies">Reply 1</div>
+              </div>
+            </div>
+            <div class="comment" dataset="first-first-reply">
+              <div class="comment-card">
+                <h3 class="comment-title">
+                  The first reply to the first reply to the first reply
+                </h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Voluptatum eaque itaque sit tempora officiis, quisquam atque?
+                  Impedit dignissimos error laudantium!
+                </p>
+                <div class="comment-card-footer">
+                  <div>Likes 123</div>
+                  <div>Dislikes 23</div>
+                  <div class="show-replies">Reply 0</div>
+                </div>
+              </div>
+            </div>
+         </div>
+            </div>
+
+         <div class="comment" dataset="first-comment" id="second-reply" >
+            <div class="comment-card">
+           <h3 class="comment-title">The second reply</h3>
+          <p>
+           Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+           Voluptatum eaque itaque sit tempora officiis, quisquam atque?
+           Impedit dignissimos error laudantium!
+         </p>
+         <div class="comment-card-footer">
+           <div>Likes 123</div>
+           <div>Dislikes 23</div>
+           <div class="show-replies">Reply 0</div>
+         </div>
+       </div>
+     </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+        <label for="comment" name="comment">ADD YOUR COMMENT BELOW-</label>
+        <textarea id="comment"></textarea>
+        <button id="addComments">Add</button>
+        <div id="allComments"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+ 
+
+<!-- count api 
+https://api.countapi.xyz/create?namespace={name of site}&enable_reset=1 -->
+
+<!-- script for head tag
+<script src="https://api.countapi.xyz/hit/codefoxx.com/c63d9a7e-7c1d-429d-8b4a-fd1fc837184a?callback=websiteVisits"></script>-->
+
+<!-- in script.js
+function websiteVisits(response){
+     document.querySelector("#visits").textContent = response.value;
+} -->
+
+<!-- "key":"c63d9a7e-7c1d-429d-8b4a-fd1fc837184a" -->

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="search-part">
+    <section class="my-search">
+        <input type="text" id="searchbar" name="search" onkeyup="searchMovies()" placeholder="search movies..">
+     <button id="search">
+        <img src="search-normal.png" >
+        Search
+     </button>
+    </section>
+     <ol>
+        <li class="movies">The Wedding Party</li>
+        <li class="movies">King of Boys</li>
+        <li class="movies">Brotherhood</li>
+        <li class="movies">Anikulapo</li>
+        <li class="movies">Ayinla</li>
+        <li class="movies">Agesinkole</li>
+        <li class="movies">Blood Sisters</li>
+        <li class="movies">Chief Daddy</li>
+        <li class="movies">Castle and Castle</li>
+        <li class="movies">Banana Island Ghost</li>
+     </ol>
+    </div>
+
+
+    <div class="share-part">
+        <!-- facebook -->
+        <a href="https://www.facebook.com/sharer/sharer.php?u=<URL>" class="share-btn facebook" target="_blank">
+            <img src="facebook.png" alt="facebook" > Facebook</a>
+         <!-- twitter -->
+        <a href="https://twitter.com/share?url=<URL>&text=<TEXT>via=<USERNAME>" class="share-btn twitter" target="_blank">
+            <img src="twitter.png" alt="twitter"> Twitter
+        </a>
+         <!-- reddit -->
+        <a href="https://reddit.com/submit?url=<URL>&title=<TITLE>" class="share-btn reddit" target="_blank">
+            <img src="#" alt="reddit">
+            Reddit
+        </a>
+         <!-- linkedin -->
+        <a href="https://www.linkedin.com/shareArticle?url=<URL>&title=<TITLE>&summary=<SUMMARY>&source=<SOURCE_URL>" class="share-btn linkedin" target="_blank">
+            <img src="linkedin.png" alt="linkedin">
+           LinkedIn
+        </a>
+         <!-- instagram -->
+        <a href="" class="share-btn instagram" target="_blank">
+            <img src="#" alt="instagram">
+           Instagram
+        </a>
+         <!-- mail -->
+        <a href="mailto:subject=<SUBJECT>&body=<BODY>" class="share-btn mail" target="_blank">
+            <img src="mail.png" alt="email">
+            Email
+        </a>
+         <!-- hacker news -->
+        <a href="https://news.ycombinator.com/submitlink?u=<URL>&t=<TITLE>" class="share-btn hacker" target="_blank">
+            <img src="#" alt="hacker news">
+            Hacker News
+        </a>
+    </div>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

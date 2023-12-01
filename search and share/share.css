@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.comment-container {
+    width: min(90%, 1140px);
+    margin: 3rem auto;
+  }
+
+  .comment {
+    display: none;
+    position: relative;
+  }
+  
+  .comment.opened {
+    display: block;
+  }
+  
+  .comment::before {
+    content: " ";
+    background-color: rgb(170, 170, 170);
+    position: absolute;
+    min-height: 100%;
+    width: 1px;
+    left: -10px;
+  }
+
+  .comment-card{
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    min-width: 100%;
+    box-shadow:0 0 50px rgb(0 0 0 / 10%);
+  }
+
+  .comment:not(:first-child) {
+    margin-left: 3rem;
+    margin-top: 1rem;
+  }
+
+  .comment-card h3,
+.comment-card p {
+  margin-bottom: 1rem;
+}
+
+.comment-card-footer {
+  display: flex;
+  font-size: 0.85rem;
+  opacity: 0.6;
+  gap: 30px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.show-replies {
+  cursor: pointer;
+}
+
+.comment-container button{
+    border: none;
+    background-color: transparent;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+#shareBtn img{
+    width: 0.85em;
+}
+
+
+
+
+
+/* comment box below */
+
+input[type=text]:invalid {
+    border: red solid 1px;
+}
+
+.container {
+    margin-top: 5rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.container > label {
+   text-align: center;
+   text-transform: capitalize;
+   font-size: 20px;
+}
+
+textarea{
+    resize: none;
+    height: 100px;
+    outline: none;
+    padding: .4rem .6rem;
+}
+
+#comment{
+    /* background-color: cornflowerblue; */
+    background-color: #f2f2f2;
+    
+
+}
+
+#addComments {
+    width: 20%;
+    padding: 5px;
+    background-color: darkblue;
+    color: white;
+    align-self: center;
+}
+
+.wrapper > button {
+    margin-right: 5px;
+    padding: 5px;
+    background-color: darkblue;
+    color: white;
+}
+
+/* .wrapper{
+    display: none;
+} */
+
+/* .btn-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    gap: 14px;
+   margin-top: .5rem;
+} */
+
